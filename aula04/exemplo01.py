@@ -30,10 +30,53 @@
 #     print("Usuário ou senha incorretos")
 #----------------------------------------------------
 
-usuario = input('Nome: ').lower()
-senha = input ('Senha: ')
+# usuario = input('Nome: ').lower()
+# senha = input ('Senha: ')
 
-if usuario == "admin" or senha == "1234":
-    print('Login realizado com sucesso')
+# if usuario == "admin" or senha == "1234":
+#     print('Login realizado com sucesso')
+# else:
+#     print("Usuário ou senha incorretos")
+#--------------------------------------------
+
+# Exemplo IFs encadeados
+
+# nota = float(input ("Insira nota: "))
+# if nota >= 9:
+#     print("A")
+# elif nota >= 7:
+#     print ("B")
+# elif nota >= 5:
+#     print ("C")
+# elif nota >= 3:
+#     print ("D")
+# else:
+#     print ("E")
+
+#--------------------------------------------
+# Exemplo IFs não encadeados
+# nota = float(input ("Insira nota: "))
+# if nota >= 9:
+#     print("A")
+# if nota >= 7:
+#     print ("B")
+# if nota >= 5:
+#     print ("C")
+# if nota >= 3:
+#     print ("D")
+# else:
+#     print ("E")
+
+#--------------------------------------------
+#Exemplo IFs aninhados
+
+nota = float(input ("Insira nota: "))
+frequencia = float(input ("Informe a frequência: "))
+
+if nota >= 7: #aprovado por nota mas precisa checar a frequência
+    if frequencia >= 75:
+        print('Aprovado por nota e frequência')
+    else:
+        print('Reprovado por frequência baixa')
 else:
-    print("Usuário ou senha incorretos")
+    print("Reprovado por nota baixa")
